@@ -1,13 +1,19 @@
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open!</Text>
-      <StatusBar style="auto" />
-    </View>
+
+    <NavigationContainer>
+      <View style={styles.container}>
+        <Text>Lets build Slack!</Text>
+        <StatusBar style="auto" />
+      </View>
+    </NavigationContainer>
+
   );
 }
 
